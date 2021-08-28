@@ -6,7 +6,7 @@ def Create_Url(search_item):
     template = "https://www.amazon.in/s?k={}&ref=nb_sb_noss_2"
     item = search_item.replace(' ', '+')
     url = template.format(item)
-    url += "&page={}"
+    url += "&page={}"           # this is what amazon adds to move to the next page
     return url
 
 
@@ -26,19 +26,20 @@ def Check_Hovered_Sponsor(item):
         return False
 
 
+# finds out the price and discounted price of the item
 def Return_Discount_Actual_Price(item):
     product_price = item.find('a', {'class': 'a-size-base a-link-normal a-text-normal'})
     return_list = []
     try:
         discounted_and_actual_wrong = product_price.text.split(' ', 1)
         unwanted_discounted = discounted_and_actual_wrong[0].split('₹')
-        if (len(unwanted_discounted) >= 2):
+        if len(unwanted_discounted) >= 2:
             discounted = unwanted_discounted[1]
         else:
             discounted = unwanted_discounted[0]
 
         unwanted_actual = discounted_and_actual_wrong[1].split('₹')
-        if (len(unwanted_actual) >= 2):
+        if len(unwanted_actual) >= 2:
             actual = unwanted_actual[1]
         else:
             actual = unwanted_actual[0]
@@ -50,6 +51,8 @@ def Return_Discount_Actual_Price(item):
     return return_list
 
 
+# deletes selected products
+# it displays two groups of items with index next to them
 def Delete_Amazon_Or_Hovered(hovered_items, hovered_price_discount, hovered_price_actual, amazons_items,
                              amazons_price_actual, amazons_price_discount):
     not_done = True
@@ -66,40 +69,52 @@ def Delete_Amazon_Or_Hovered(hovered_items, hovered_price_discount, hovered_pric
         for x in amazons_items:
             print(counter, x)
             counter += 1
-        selected_group = input('''Enter the first three leters of the group you want to delete from: 
-    Or Enter q to exit''')
+        print('\n\n')
+        selected_group = input('''Enter the first three letters of the group you want to delete from: 
+Or Enter q to exit  ''')
+
+        if selected_group == "q":
+            not_done = False
+            continue
+
         delete_item_idx = int(input('''Enter the index of the item you want to delete
-    Or Enter an negative number to exit'''))
-        if (selected_group == "hov" and delete_item_idx >= 0):
+Or Enter an negative number to exit  '''))
+        if delete_item_idx < 0:
+            not_done = False
+            continue
+        if selected_group == "hov" and delete_item_idx >= 0:
             hovered_items.pop(delete_item_idx)
             hovered_price_discount.pop(delete_item_idx)
             hovered_price_actual.pop(delete_item_idx)
-        elif (selected_group == "ama" and delete_item_idx >= 0):
+        elif selected_group == "ama" and delete_item_idx >= 0:
             amazons_items.pop(delete_item_idx)
             amazons_price_actual.pop(delete_item_idx)
             amazons_price_discount.pop(delete_item_idx)
-        elif (selected_group == "q" or delete_item_idx < 0):
-            not_done = False
-            continue
+
         else:
+            print('\n\n')
             print("You may have selected a group which is not present")
 
     return [[hovered_items, hovered_price_actual, hovered_price_discount],
             [amazons_items, amazons_price_actual, amazons_price_discount]]
 
 
+# adds all of the products together in device_names actual_price and discount_price lists
 def Add_Amazon_Or_Hovered_Items(hovered_items, amazons_items, device_names, actual_price, discount_price,
                                 amazons_price_discount,
                                 amazons_price_actual, hovered_price_actual, hovered_price_discount):
     counter = 0
+    print('\n\n')
     print("These are the remaining items. What would you like to do with them ?")
     for z in hovered_items:
         print(counter, z)
         counter += 1
+    print('\n\n')
     for x in amazons_items:
         print(counter, x)
         counter += 1
 
+    print('\n\n')
     print("Type ad to add all the remaining devices to the csv file if they are not already present")
     print("Type de to discard all the remaining devices")
     user_answer = input("Enter your choice")
@@ -122,16 +137,19 @@ def Add_Amazon_Or_Hovered_Items(hovered_items, amazons_items, device_names, actu
         except IndexError:
             print("No records left in amazons_items")
 
+    elif user_answer == "de":
+        pass
+
     return [device_names, actual_price, discount_price]
 
 
+# just writes the three lists in a csv file
+# if the file already exists it appends to it other wise it creates a new one
 def Write_To_CSV(device_names, actual_price, discounted_price):
     temp_list = []
-    if (os.path.isfile('Amazon.csv')):
+    if os.path.isfile('Amazon.csv'):
         with open("Amazon.csv", 'a', newline='', encoding="utf-8") as file_write:
             writer = csv.writer(file_write)
-            print(discounted_price)
-            print(actual_price)
             for i in range(len(device_names)):
                 temp_list.append(device_names[i])
                 try:
@@ -144,14 +162,11 @@ def Write_To_CSV(device_names, actual_price, discounted_price):
                 except IndexError:
                     temp_list.append(0)
                     print("Index error in temp_list")
-                print(temp_list)
                 writer.writerow(temp_list)
                 temp_list = []
     else:
         fields = ['Name', 'Actual', 'Discounted']
         with open('Amazon.csv', 'w', newline='', encoding="utf-8") as file:
-            print(discounted_price)
-            print(actual_price)
             writer = csv.writer(file)
             writer.writerow(fields)
             for i in range(len(device_names)):
@@ -159,7 +174,6 @@ def Write_To_CSV(device_names, actual_price, discounted_price):
                 try:
                     temp_list.append(actual_price[i])
                 except IndexError:
-                    print('whyasdf')
                     temp_list.append(0)
 
                 try:
@@ -167,6 +181,5 @@ def Write_To_CSV(device_names, actual_price, discounted_price):
                 except IndexError:
                     temp_list.append(0)
                     print("Index error in temp_list")
-                print(temp_list)
                 writer.writerow(temp_list)
                 temp_list = []

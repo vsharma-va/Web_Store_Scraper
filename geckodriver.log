@@ -226,3 +226,546 @@ JavaScript warning: https://www.amazon.in/s?k=Xiaomi&ref=nb_sb_noss_2 line 7 > i
 JavaScript warning: https://www.amazon.in/s?k=Xiaomi&ref=nb_sb_noss_2 line 7 > injectedScript, line 1: Failed to create WebGL context: WebGL is currently disabled.
 JavaScript warning: https://www.amazon.in/s?k=Xiaomi&ref=nb_sb_noss_2 line 7 > injectedScript, line 1: Failed to create WebGL context: WebGL is currently disabled.
 JavaScript warning: https://www.amazon.in/s?k=Xiaomi&ref=nb_sb_noss_2 line 7 > injectedScript, line 1: Failed to create WebGL context: WebGL is currently disabled.
+JavaScript warning: https://www.amazon.in/s?k=Xiaomi&ref=nb_sb_noss_2 line 7 > injectedScript, line 1: Failed to create WebGL context: WebGL is currently disabled.
+JavaScript warning: https://www.amazon.in/s?k=Xiaomi&ref=nb_sb_noss_2 line 7 > injectedScript, line 1: Failed to create WebGL context: WebGL is currently disabled.
+SourceActor threw an exception: [Exception... "Failed to open input source 'file:///'"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 670"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:670:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:516:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:442:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:406:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2142:35
+addAllSources@resource://devtools/server/actors/thread.js:1509:14
+watch@resource://devtools/server/actors/resources/sources.js:52:17
+watchResources@resource://devtools/server/actors/resources/index.js:239:19
+_watchTargetResources@resource://devtools/server/actors/targets/target-actor-mixin.js:156:24
+addWatcherDataEntry@resource://devtools/server/actors/targets/target-actor-mixin.js:47:20
+_addWatcherDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:483:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:425:21
+Line: 670, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 670: NS_ERROR_FAILURE: Failed to open input source 'file:///'
+1630137010088	Marionette	INFO	Stopped listening on port 51760
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1630137023257	geckodriver	INFO	Listening on 127.0.0.1:53080
+1630137026308	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofile1UTMBY"
+1630137026619	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofile1UTMBY\\search.json.mozlz4", (void 0)))
+1630137028364	Marionette	INFO	Listening on port 53088
+1630137028458	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: services.settings: 
+  main/doh-providers Signature failed  InvalidSignatureError: Invalid content signature (main/doh-providers)
+console.error: services.settings: 
+  main/doh-providers local data was corrupted
+console.warn: services.settings: main/doh-providers Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/doh-config Signature failed  InvalidSignatureError: Invalid content signature (main/doh-config)
+console.error: services.settings: 
+  main/doh-config local data was corrupted
+console.warn: services.settings: main/doh-config Signature verified failed. Retry from scratch
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1630139894503	Marionette	INFO	Stopped listening on port 53088
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1630139896577	geckodriver	INFO	Listening on 127.0.0.1:53409
+1630139899651	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofile74BNpY"
+1630139899969	Marionette	INFO	Marionette enabled
+JavaScript error: resource:///modules/BrowserGlue.jsm, line 1340: uncaught exception: undefined
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofile74BNpY\\search.json.mozlz4", (void 0)))
+1630139900959	Marionette	INFO	Listening on port 53417
+1630139901203	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.amazon.in/ line 7 > injectedScript, line 1: Failed to create WebGL context: WebGL is currently disabled.
+JavaScript warning: https://www.amazon.in/ line 7 > injectedScript, line 1: Failed to create WebGL context: WebGL is currently disabled.
+JavaScript warning: https://www.amazon.in/s?k=Xiaomi&ref=nb_sb_noss_2 line 7 > injectedScript, line 1: Failed to create WebGL context: WebGL is currently disabled.
+JavaScript warning: https://www.amazon.in/s?k=Xiaomi&ref=nb_sb_noss_2 line 7 > injectedScript, line 1: Failed to create WebGL context: WebGL is currently disabled.
+console.error: services.settings: 
+  main/doh-providers Signature failed  InvalidSignatureError: Invalid content signature (main/doh-providers)
+console.error: services.settings: 
+  main/doh-providers local data was corrupted
+console.warn: services.settings: main/doh-providers Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/doh-config Signature failed  InvalidSignatureError: Invalid content signature (main/doh-config)
+console.error: services.settings: 
+  main/doh-config local data was corrupted
+console.warn: services.settings: main/doh-config Signature verified failed. Retry from scratch
+1630143444141	Marionette	INFO	Stopped listening on port 53417
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1630143525262	geckodriver	INFO	Listening on 127.0.0.1:51284
+1630143528290	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofileW8JAt5"
+1630143528626	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofileW8JAt5\\search.json.mozlz4", (void 0)))
+1630143530558	Marionette	INFO	Listening on port 51292
+1630143530967	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: services.settings: 
+  main/doh-providers Signature failed  InvalidSignatureError: Invalid content signature (main/doh-providers)
+console.error: services.settings: 
+  main/doh-providers local data was corrupted
+console.warn: services.settings: main/doh-providers Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/doh-config Signature failed  InvalidSignatureError: Invalid content signature (main/doh-config)
+console.error: services.settings: 
+  main/doh-config local data was corrupted
+console.warn: services.settings: main/doh-config Signature verified failed. Retry from scratch
+1630143927696	Marionette	INFO	Stopped listening on port 51292
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Com1630143934852	Marionette	INFO	Stopped listening on port 51480
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+ozprofileOmCvXC\\search.json.mozlz4", (void 0)))
+1630143927805	Marionette	INFO	Listening on port 51630
+1630143928198	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1630143964350	Marionette	INFO	Stopped listening on port 51630
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1630143966809	geckodriver	INFO	Listening on 127.0.0.1:51772
+1630143969871	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofileQSvWxe"
+1630143970194	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofileQSvWxe\\search.json.mozlz4", (void 0)))
+1630143972046	Marionette	INFO	Listening on port 51780
+1630143972533	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1630144034201	Marionette	INFO	Stopped listening on port 51781630144034416	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yavsv\\AppData\\Local\
+###!!! [Parent][RunMessage] 1630144034779	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofileK2BUze\\search.json.mozlz4", (void 0)))
+1630144036507	Marionette	INFO	Listening on port 51932
+1630144036587	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1630144174843	Marionette	INFO	Stopped listening on port 51931630144176499	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofilehopt1m"
+1630144176818	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofilehopt1m\\search.json.mozlz4", (void 0)))
+1630144178707	Marionette	INFO	Listening on port 52086
+1630144179148	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1630144463086	Marionette	INFO	Stopped listening on port 52086
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+urce://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofile0gnZaC\\search.json.mozlz4", (void 0)))
+1630144459250	Marionette	INFO	Listening on port 55693
+1630144459302	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1630144519631	Marionette	INFO	Stopped listening on port 55691630144521051	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofile0EjZKO"
+1630144521375	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofile0EjZKO\\search.json.mozlz4", (void 0)))
+1630144523061	Marionette	INFO	Listening on port 55846
+1630144523116	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1630144735262	Marionette	INFO	Stopped listening on port 55846
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1630144740677	geckodriver	INFO	Listening on 127.0.0.1:56003
+1630144743732	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofileGLz1t4"
+1630144744059	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofileGLz1t4\\search.json.mozlz4", (void 0)))
+1630144745857	Marionette	INFO	Listening on port 56012
+1630144745891	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1630144815869	Marionette	INFO	Stopped listening on port 56012
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1630144824303	geckodriver	INFO	Listening on 127.0.0.1:56145
+1630144827367	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofileyZ3nrj"
+1630144827692	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofileyZ3nrj\\search.json.mozlz4", (void 0)))
+1630144829411	Marionette	INFO	Listening on port 56154
+1630144829528	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1630145046854	Marionette	INFO	Stopped listening on port 56154
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1630145126051	geckodriver	INFO	Listening on 127.0.0.1:56306
+1630145129108	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofileHLtkE0"
+1630145129435	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofileHLtkE0\\search.json.mozlz4", (void 0)))
+1630145131148	Marionette	INFO	Listening on port 56315
+1630145131162	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1630145396995	Marionette	INFO	Stopped listening on port 56315
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+\search.json.mozlz4", (void 0)))
+1630145263750	Marionette	INFO	Listening on port 56502
+1630145263819	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1630145575193	Marionette	INFO	Stopped listening on port 56502
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+urce://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofileB7j73w\\search.json.mozlz4", (void 0)))
+1630145394331	Marionette	INFO	Listening on port 56655
+1630145394703	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1630145575674	Marionette	INFO	Stopped listening on port 56651630145576569	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofiledllGmk"
+1630145576918	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofiledllGmk\\search.json.mozlz4", (void 0)))
+1630145578659	Marionette	INFO	Listening on port 56815
+1630145578720	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1630145684100	Marionette	INFO	Stopped listening on port 56811630145684196	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yavsv\\AppData\\Local\
+###!!! [Parent][RunMessage] 1630145684565	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofileTuTIub\\search.json.mozlz4", (void 0)))
+1630145686431	Marionette	INFO	Listening on port 56963
+1630145686855	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+1630145801903	Marionette	INFO	Stopped listening on port 56961630145803077	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofileDDEBf2"
+1630145803427	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofileDDEBf2\\search.json.mozlz4", (void 0)))
+1630145805116	Marionette	INFO	Listening on port 57138
+1630145805227	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: services.settings: 
+  main/doh-providers Signature failed  InvalidSignatureError: Invalid content signature (main/doh-providers)
+console.error: services.settings: 
+  main/doh-providers local data was corrupted
+console.warn: services.settings: main/doh-providers Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/doh-config Signature failed  InvalidSignatureError: Invalid content signature (main/doh-config)
+console.error: services.settings: 
+  main/doh-config local data was corrupted
+console.warn: services.settings: main/doh-config Signature verified failed. Retry from scratch
+1630146266061	Marionette	INFO	Stopped listening on port 57138
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+undError: No such JSWindowActor 'MarionetteEvents'
+1630146266551	Marionette	INFO	Stopped listening on port 57376
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+[Parent 13744, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1630146365237	geckodriver	INFO	Listening on 127.0.0.1:57581
+1630146368307	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofilePTkzwl"
+1630146368630	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofilePTkzwl\\search.json.mozlz4", (void 0)))
+1630146370475	Marionette	INFO	Listening on port 57589
+1630146370492	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1630146603233	Marionette	INFO	Stopped listening on port 57589
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+urce://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofileX8LSPu\\search.json.mozlz4", (void 0)))
+1630146603183	Marionette	INFO	Listening on port 57798
+1630146603685	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1630146719934	Marionette	INFO	Stopped listening on port 57798
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] 1630146720405	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofileQSJw8c\\search.json.mozlz4", (void 0)))
+1630146722183	Marionette	INFO	Listening on port 57978
+1630146722545	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+console.error: services.settings: 
+  main/doh-providers Signature failed  InvalidSignatureError: Invalid content signature (main/doh-providers)
+console.error: services.settings: 
+  main/doh-providers local data was corrupted
+console.warn: services.settings: main/doh-providers Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/doh-config Signature failed  InvalidSignatureError: Invalid content signature (main/doh-config)
+console.error: services.settings: 
+  main/doh-config local data was corrupted
+console.warn: services.settings: main/doh-config Signature verified failed. Retry from scratch
+1630147192670	Marionette	INFO	Stopped listening on port 57978
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Com1630147193137	Marionette	INFO	Stopped listening on port 58167
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+[Parent 8384, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+ULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofileU7ufJY\\search.json.mozlz4", (void 0)))
+1630147059582	Marionette	INFO	Listening on port 58365
+1630147060097	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1630147193530	Marionette	INFO	Stopped listening on port 58365
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+\Temp\\rust_mozprofileZmBvnl"
+1630147186562	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofileZmBvnl\\search.json.mozlz4", (void 0)))
+1630147188509	Marionette	INFO	Listening on port 58512
+1630147188895	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: services.settings: 
+  main/doh-providers Signature failed  InvalidSignatureError: Invalid content signature (main/doh-providers)
+console.error: services.settings: 
+  main/doh-providers local data was corrupted
+console.warn: services.settings: main/doh-providers Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/doh-config Signature failed  InvalidSignatureError: Invalid content signature (main/doh-config)
+console.error: services.settings: 
+  main/doh-config local data was corrupted
+console.warn: services.settings: main/doh-config Signature verified failed. Retry from scratch
+1630147657453	Marionette	INFO	Stopped listening on port 58512
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+local data was corrupted
+console.warn: services.settings: main/doh-providers Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/doh-config Signature failed  InvalidSignatureError: Invalid content signature (main/doh-config)
+console.error: services.settings: 
+  main/doh-config local data was corrupted
+console.warn: services.settings: main/doh-config Signature verified failed. Retry from scratch
+1630147657802	Marionette	INFO	Stopped listening on port 58658
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Com1630147658153	Marionette	INFO	Stopped listening on port 58818
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+urce://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofilempFdBO\\search.json.mozlz4", (void 0)))
+1630147397980	Marionette	INFO	Listening on port 58965
+1630147398476	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1630147658524	Marionette	INFO	Stopped listening on port 58965
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+urce://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofileduEK0q\\search.json.mozlz4", (void 0)))
+1630147477527	Marionette	INFO	Listening on port 59113
+1630147477823	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1630147534139	geckodriver	INFO	Listening on 127.0.0.1:59253
+1630147537197	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofileVNZc7o"
+1630147537519	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofileVNZc7o\\search.json.mozlz4", (void 0)))
+1630147539480	Marionette	INFO	Listening on port 59261
+1630147539856	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1630147658937	Marionette	INFO	Stopped listening on port 59261
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1630147786308	geckodriver	INFO	Listening on 127.0.0.1:59421
+1630147789396	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofilet6RS5g"
+1630147789720	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofilet6RS5g\\search.json.mozlz4", (void 0)))
+1630147791427	Marionette	INFO	Listening on port 59429
+1630147791445	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: services.settings: 
+  main/doh-providers Signature failed  InvalidSignatureError: Invalid content signature (main/doh-providers)
+console.error: services.settings: 
+  main/doh-providers local data was corrupted
+console.warn: services.settings: main/doh-providers Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/doh-config Signature failed  InvalidSignatureError: Invalid content signature (main/doh-config)
+console.error: services.settings: 
+  main/doh-config local data was corrupted
+console.warn: services.settings: main/doh-config Signature verified failed. Retry from scratch
+1630148216138	Marionette	INFO	Stopped listening on port 59429
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Com1630148216632	Marionette	INFO	Stopped listening on port 59566
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+\Temp\\rust_mozprofileMX1T1E"
+1630147932569	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofileMX1T1E\\search.json.mozlz4", (void 0)))
+1630147934543	Marionette	INFO	Listening on port 59711
+1630147934881	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1630148211386	geckodriver	INFO	Listening on 127.0.0.1:59849
+1630148214434	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofile3J8UFL"
+1630148214771	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofile3J8UFL\\search.json.mozlz4", (void 0)))
+1630148216670	Marionette	INFO	Listening on port 59857
+1630148217098	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1630148311699	Marionette	INFO	Stopped listening on port 59857
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+urce://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofileEtNyx2\\search.json.mozlz4", (void 0)))
+1630148261343	Marionette	INFO	Listening on port 60000
+1630148261378	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1630148356530	Marionette	INFO	Stopped listening on port 60000
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+urce://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofileSCcXxL\\search.json.mozlz4", (void 0)))
+1630148357563	Marionette	INFO	Listening on port 60154
+1630148358012	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: services.settings: 
+  main/doh-providers Signature failed  InvalidSignatureError: Invalid content signature (main/doh-providers)
+console.error: services.settings: 
+  main/doh-providers local data was corrupted
+console.warn: services.settings: main/doh-providers Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/doh-config Signature failed  InvalidSignatureError: Invalid content signature (main/doh-config)
+console.error: services.settings: 
+  main/doh-config local data was corrupted
+console.warn: services.settings: main/doh-config Signature verified failed. Retry from scratch
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1630149121639	Marionette	INFO	Stopped listening on port 60154
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+settings: 
+  main/doh-config Signature failed  InvalidSignatureError: Invalid content signature (main/doh-config)
+console.error: services.settings: 
+  main/doh-config local data was corrupted
+console.warn: services.settings: main/doh-config Signature verified failed. Retry from scratch
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1630149122079	Marionette	INFO	Stopped listening on port 60318
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+\Temp\\rust_mozprofileC8dOAs"
+1630149088832	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofileC8dOAs\\search.json.mozlz4", (void 0)))
+1630149090765	Marionette	INFO	Listening on port 60527
+1630149091186	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1630149115237	geckodriver	INFO	Listening on 127.0.0.1:60582
+1630149118301	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofilew9dRvC"
+1630149118622	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofilew9dRvC\\search.json.mozlz4", (void 0)))
+1630149120356	Marionette	INFO	Listening on port 60590
+1630149120465	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1630149278346	geckodriver	INFO	Listening on 127.0.0.1:60783
+1630149281425	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofileu8tEQq"
+1630149281747	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofileu8tEQq\\search.json.mozlz4", (void 0)))
+1630149283487	Marionette	INFO	Listening on port 60791
+1630149283596	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: services.settings: 
+  main/doh-providers Signature failed  InvalidSignatureError: Invalid content signature (main/doh-providers)
+console.error: services.settings: 
+  main/doh-providers local data was corrupted
+console.warn: services.settings: main/doh-providers Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/doh-config Signature failed  InvalidSignatureError: Invalid content signature (main/doh-config)
+console.error: services.settings: 
+  main/doh-config local data was corrupted
+console.warn: services.settings: main/doh-config Signature verified failed. Retry from scratch
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1630149848038	geckodriver	INFO	Listening on 127.0.0.1:60941
+1630149851112	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofileP4y3sn"
+1630149851530	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofileP4y3sn\\search.json.mozlz4", (void 0)))
+1630149853525	Marionette	INFO	Listening on port 60949
+1630149853786	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1630149869264	geckodriver	INFO	Listening on 127.0.0.1:61003
+1630149872331	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofileWsMK4f"
+1630149872730	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofileWsMK4f\\search.json.mozlz4", (void 0)))
+1630149874411	Marionette	INFO	Listening on port 61011
+1630149874493	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1630150213040	geckodriver	INFO	Listening on 127.0.0.1:61141
+1630150216115	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofileQiPB2Z"
+1630150216442	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofileQiPB2Z\\search.json.mozlz4", (void 0)))
+1630150218247	Marionette	INFO	Listening on port 61149
+1630150218279	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: services.settings: 
+  main/doh-providers Signature failed  InvalidSignatureError: Invalid content signature (main/doh-providers)
+console.error: services.settings: 
+  main/doh-providers local data was corrupted
+console.warn: services.settings: main/doh-providers Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/doh-config Signature failed  InvalidSignatureError: Invalid content signature (main/doh-config)
+console.error: services.settings: 
+  main/doh-config local data was corrupted
+console.warn: services.settings: main/doh-config Signature verified failed. Retry from scratch
+SourceActor threw an exception: [Exception... "Failed to open input source 'file:///'"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 670"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:670:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:516:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:442:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:406:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2142:35
+addAllSources@resource://devtools/server/actors/thread.js:1509:14
+watch@resource://devtools/server/actors/resources/sources.js:52:17
+watchResources@resource://devtools/server/actors/resources/index.js:239:19
+_watchTargetResources@resource://devtools/server/actors/targets/target-actor-mixin.js:156:24
+addWatcherDataEntry@resource://devtools/server/actors/targets/target-actor-mixin.js:47:20
+_addWatcherDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:483:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:425:21
+Line: 670, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 670: NS_ERROR_FAILURE: Failed to open input source 'file:///'
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.

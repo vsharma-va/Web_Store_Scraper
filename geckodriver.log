@@ -1,0 +1,228 @@
+1630112832311	geckodriver	INFO	Listening on 127.0.0.1:61247
+1630112835364	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofile1QPikM"
+1630112835774	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofile1QPikM\\search.json.mozlz4", (void 0)))
+1630112837995	Marionette	INFO	Listening on port 61255
+1630112838040	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1630112884038	Marionette	INFO	Stopped listening on port 61255
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1630113275376	geckodriver	INFO	Listening on 127.0.0.1:51377
+1630113278447	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofile7RiAvu"
+1630113278861	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofile7RiAvu\\search.json.mozlz4", (void 0)))
+1630113280823	Marionette	INFO	Listening on port 51385
+1630113281121	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.google.com/xjs/_/js/k=xjs.s.en_GB.k90Ts26RfAk.O/am=QmQAUAAAAAAAAH8L0CtkyAWBAAAAAGNEAAAAAAAAgBAAAYm7iQkAAEAAG2VeAhgAAAABaAjAHAKANKAAICwQAAAA4Ah0AJw_AIBHcAkHAAAAAAAAAtCSylABiYAABAAAAACxWlDVBwgAIAI/d=1/ed=1/dg=2/rs=ACT90oGbnoqsCKzm-WEvnk4eSzoZ2wzLxA/m=attn,cdos,cr,dpf,hsm,jsa,d,csi, line 788: Error: Oa`ixP9we`DeqxPd[60]
+JavaScript error: https://www.google.com/xjs/_/js/k=xjs.s.en_GB.k90Ts26RfAk.O/am=QmQAUAAAAAAAAH8L0CtkyAWBAAAAAGNEAAAAAAAAgBAAAYm7iQkAAEAAG2VeAhgAAAABaAjAHAKANKAAICwQAAAA4Ah0AJw_AIBHcAkHAAAAAAAAAtCSylABiYAABAAAAACxWlDVBwgAIAI/d=1/ed=1/dg=2/rs=ACT90oGbnoqsCKzm-WEvnk4eSzoZ2wzLxA/m=attn,cdos,cr,dpf,hsm,jsa,d,csi, line 788: Error: Oa`ixP9we`DeqxPd[61]
+JavaScript error: https://www.google.com/xjs/_/js/k=xjs.s.en_GB.k90Ts26RfAk.O/am=QmQAUAAAAAAAAH8L0CtkyAWBAAAAAGNEAAAAAAAAgBAAAYm7iQkAAEAAG2VeAhgAAAABaAjAHAKANKAAICwQAAAA4Ah0AJw_AIBHcAkHAAAAAAAAAtCSylABiYAABAAAAACxWlDVBwgAIAI/d=1/ed=1/dg=2/rs=ACT90oGbnoqsCKzm-WEvnk4eSzoZ2wzLxA/m=attn,cdos,cr,dpf,hsm,jsa,d,csi, line 788: Error: Oa`ixP9we`DeqxPd[62]
+JavaScript error: https://www.google.com/xjs/_/js/k=xjs.s.en_GB.k90Ts26RfAk.O/am=QmQAUAAAAAAAAH8L0CtkyAWBAAAAAGNEAAAAAAAAgBAAAYm7iQkAAEAAG2VeAhgAAAABaAjAHAKANKAAICwQAAAA4Ah0AJw_AIBHcAkHAAAAAAAAAtCSylABiYAABAAAAACxWlDVBwgAIAI/d=1/ed=1/dg=2/rs=ACT90oGbnoqsCKzm-WEvnk4eSzoZ2wzLxA/m=attn,cdos,cr,dpf,hsm,jsa,d,csi, line 788: Error: Oa`ixP9we`DeqxPd[63]
+JavaScript error: https://www.google.com/xjs/_/js/k=xjs.s.en_GB.k90Ts26RfAk.O/am=QmQAUAAAAAAAAH8L0CtkyAWBAAAAAGNEAAAAAAAAgBAAAYm7iQkAAEAAG2VeAhgAAAABaAjAHAKANKAAICwQAAAA4Ah0AJw_AIBHcAkHAAAAAAAAAtCSylABiYAABAAAAACxWlDVBwgAIAI/d=1/ed=1/dg=2/rs=ACT90oGbnoqsCKzm-WEvnk4eSzoZ2wzLxA/m=attn,cdos,cr,dpf,hsm,jsa,d,csi, line 788: Error: Oa`ixP9we`DeqxPd[64]
+1630113499812	Marionette	INFO	Stopped listening on port 51385
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+\Temp\\rust_mozprofileIc6SM5"
+1630113495148	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofileIc6SM5\\search.json.mozlz4", (void 0)))
+1630113497165	Marionette	INFO	Listening on port 51595
+1630113497211	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+SourceActor threw an exception: [Exception... "Failed to open input source 'file:///'"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 670"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:670:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:516:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:442:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:406:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2142:35
+addAllSources@resource://devtools/server/actors/thread.js:1509:14
+watch@resource://devtools/server/actors/resources/sources.js:52:17
+watchResources@resource://devtools/server/actors/resources/index.js:239:19
+_watchTargetResources@resource://devtools/server/actors/targets/target-actor-mixin.js:156:24
+addWatcherDataEntry@resource://devtools/server/actors/targets/target-actor-mixin.js:47:20
+_addWatcherDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:483:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:425:21
+Line: 670, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 670: NS_ERROR_FAILURE: Failed to open input source 'file:///'
+console.error: services.settings: 
+  main/doh-providers Signature failed  InvalidSignatureError: Invalid content signature (main/doh-providers)
+console.error: services.settings: 
+  main/doh-providers local data was corrupted
+console.warn: services.settings: main/doh-providers Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/doh-config Signature failed  InvalidSignatureError: Invalid content signature (main/doh-config)
+console.error: services.settings: 
+  main/doh-config local data was corrupted
+console.warn: services.settings: main/doh-config Signature verified failed. Retry from scratch
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1630114331028	geckodriver	INFO	Listening on 127.0.0.1:51860
+1630114334089	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofileUqgRHj"
+1630114334415	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofileUqgRHj\\search.json.mozlz4", (void 0)))
+1630114336430	Marionette	INFO	Listening on port 51868
+1630114336743	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1630114345971	Marionette	INFO	Stopped listening on port 51868
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1630122392454	geckodriver	INFO	Listening on 127.0.0.1:50540
+1630122395515	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofilexb113M"
+1630122395886	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofilexb113M\\search.json.mozlz4", (void 0)))
+1630122397798	Marionette	INFO	Listening on port 50548
+1630122398206	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+SourceActor threw an exception: [Exception... "Failed to open input source 'file:///'"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 670"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:670:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:516:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:442:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:406:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2142:35
+addAllSources@resource://devtools/server/actors/thread.js:1509:14
+watch@resource://devtools/server/actors/resources/sources.js:52:17
+watchResources@resource://devtools/server/actors/resources/index.js:239:19
+_watchTargetResources@resource://devtools/server/actors/targets/target-actor-mixin.js:156:24
+addWatcherDataEntry@resource://devtools/server/actors/targets/target-actor-mixin.js:47:20
+_addWatcherDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:483:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:425:21
+Line: 670, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 670: NS_ERROR_FAILURE: Failed to open input source 'file:///'
+console.error: services.settings: 
+  main/doh-providers Signature failed  InvalidSignatureError: Invalid content signature (main/doh-providers)
+console.error: services.settings: 
+  main/doh-providers local data was corrupted
+console.warn: services.settings: main/doh-providers Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/doh-config Signature failed  InvalidSignatureError: Invalid content signature (main/doh-config)
+console.error: services.settings: 
+  main/doh-config local data was corrupted
+console.warn: services.settings: main/doh-config Signature verified failed. Retry from scratch
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1630127674673	Marionette	INFO	Stopped listening on port 50548
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+urce:///modules/BrowserGlue.jsm, line 1340: uncaught exception: undefined
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofileATbwge\\search.json.mozlz4", (void 0)))
+1630125486860	Marionette	INFO	Listening on port 51230
+1630125487199	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.amazon.in/s?k=S20&ref=nb_sb_noss_2 line 7 > injectedScript, line 1: Failed to create WebGL context: WebGL is currently disabled.
+JavaScript warning: https://www.amazon.in/s?k=S20&ref=nb_sb_noss_2 line 7 > injectedScript, line 1: Failed to create WebGL context: WebGL is currently disabled.
+JavaScript warning: https://www.amazon.in/s?k=Xiaomi&ref=nb_sb_noss_2 line 7 > injectedScript, line 1: Failed to create WebGL context: WebGL is currently disabled.
+JavaScript warning: https://www.amazon.in/s?k=Xiaomi&ref=nb_sb_noss_2 line 7 > injectedScript, line 1: Failed to create WebGL context: WebGL is currently disabled.
+SourceActor threw an exception: [Exception... "Failed to open input source 'file:///'"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 670"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:670:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:516:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:442:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:406:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2142:35
+addAllSources@resource://devtools/server/actors/thread.js:1509:14
+watch@resource://devtools/server/actors/resources/sources.js:52:17
+watchResources@resource://devtools/server/actors/resources/index.js:239:19
+_watchTargetResources@resource://devtools/server/actors/targets/target-actor-mixin.js:156:24
+addWatcherDataEntry@resource://devtools/server/actors/targets/target-actor-mixin.js:47:20
+_addWatcherDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:483:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:425:21
+Line: 670, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 670: NS_ERROR_FAILURE: Failed to open input source 'file:///'
+console.error: services.settings: 
+  main/doh-providers Signature failed  InvalidSignatureError: Invalid content signature (main/doh-providers)
+console.error: services.settings: 
+  main/doh-providers local data was corrupted
+console.warn: services.settings: main/doh-providers Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/doh-config Signature failed  InvalidSignatureError: Invalid content signature (main/doh-config)
+console.error: services.settings: 
+  main/doh-config local data was corrupted
+console.warn: services.settings: main/doh-config Signature verified failed. Retry from scratch
+console.warn: "Resource  of root-node was not found."
+JavaScript warning: https://www.amazon.in/s?k=Xiaomi&ref=nb_sb_noss_2 line 7 > injectedScript, line 1: Failed to create WebGL context: WebGL is currently disabled.
+JavaScript warning: https://www.amazon.in/s?k=Xiaomi&ref=nb_sb_noss_2 line 7 > injectedScript, line 1: Failed to create WebGL context: WebGL is currently disabled.
+console.warn: "Resource  of root-node was not found."
+JavaScript warning: https://www.amazon.in/s?k=Intel&ref=nb_sb_noss_2 line 7 > injectedScript, line 1: Failed to create WebGL context: WebGL is currently disabled.
+JavaScript warning: https://www.amazon.in/s?k=Intel&ref=nb_sb_noss_2 line 7 > injectedScript, line 1: Failed to create WebGL context: WebGL is currently disabled.
+JavaScript warning: https://www.amazon.in/AMD-Ryzen-Threadripper-3970X-100-100000011WOF/dp/B0815JJQQ8/ref=sr_1_18_sspa?dchild=1&keywords=Intel&qid=1630126478&sr=8-18-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyTjBSQzAzRTNNUkU0JmVuY3J5cHRlZElkPUEwOTE3NDE4MlRQMzNXT1pTMVBCTCZlbmNyeXB0ZWRBZElkPUEwNTI4OTkwM0sxNkY3RU43NlZDNCZ3aWRnZXROYW1lPXNwX2J0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU= line 7 > injectedScript, line 1: Failed to create WebGL context: WebGL is currently disabled.
+JavaScript warning: https://www.amazon.in/AMD-Ryzen-Threadripper-3970X-100-100000011WOF/dp/B0815JJQQ8/ref=sr_1_18_sspa?dchild=1&keywords=Intel&qid=1630126478&sr=8-18-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyTjBSQzAzRTNNUkU0JmVuY3J5cHRlZElkPUEwOTE3NDE4MlRQMzNXT1pTMVBCTCZlbmNyeXB0ZWRBZElkPUEwNTI4OTkwM0sxNkY3RU43NlZDNCZ3aWRnZXROYW1lPXNwX2J0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU= line 7 > injectedScript, line 1: Failed to create WebGL context: WebGL is currently disabled.
+Handler function _httpResponseExaminer threw an exception: TypeError: topFrame.browsingContext is null
+Stack: matchRequest@resource://devtools/server/actors/network-monitor/network-observer.js:126:9
+_httpResponseExaminer@resource://devtools/server/actors/network-monitor/network-observer.js:445:10
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 126, column: 9
+console.error: (new TypeError("topFrame.browsingContext is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 126))
+Handler function _httpResponseExaminer threw an exception: TypeError: topFrame.browsingContext is null
+Stack: matchRequest@resource://devtools/server/actors/network-monitor/network-observer.js:126:9
+_httpResponseExaminer@resource://devtools/server/actors/network-monitor/network-observer.js:445:10
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 126, column: 9
+console.error: (new TypeError("topFrame.browsingContext is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 126))
+Handler function _httpResponseExaminer threw an exception: TypeError: topFrame.browsingContext is null
+Stack: matchRequest@resource://devtools/server/actors/network-monitor/network-observer.js:126:9
+_httpResponseExaminer@resource://devtools/server/actors/network-monitor/network-observer.js:445:10
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 126, column: 9
+console.error: (new TypeError("topFrame.browsingContext is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 126))
+JavaScript warning: https://www.amazon.in/AMD-Ryzen-Threadripper-3970X-100-100000011WOF/dp/B0815JJQQ8/ref=sr_1_18_sspa?dchild=1&keywords=Intel&qid=1630126478&sr=8-18-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyTjBSQzAzRTNNUkU0JmVuY3J5cHRlZElkPUEwOTE3NDE4MlRQMzNXT1pTMVBCTCZlbmNyeXB0ZWRBZElkPUEwNTI4OTkwM0sxNkY3RU43NlZDNCZ3aWRnZXROYW1lPXNwX2J0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU= line 7 > injectedScript, line 1: Failed to create WebGL context: WebGL is currently disabled.
+JavaScript warning: https://www.amazon.in/AMD-Ryzen-Threadripper-3970X-100-100000011WOF/dp/B0815JJQQ8/ref=sr_1_18_sspa?dchild=1&keywords=Intel&qid=1630126478&sr=8-18-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyTjBSQzAzRTNNUkU0JmVuY3J5cHRlZElkPUEwOTE3NDE4MlRQMzNXT1pTMVBCTCZlbmNyeXB0ZWRBZElkPUEwNTI4OTkwM0sxNkY3RU43NlZDNCZ3aWRnZXROYW1lPXNwX2J0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU= line 7 > injectedScript, line 1: Failed to create WebGL context: WebGL is currently disabled.
+Handler function threw an exception: TypeError: topFrame.browsingContext is null
+Stack: matchRequest@resource://devtools/server/actors/network-monitor/network-observer.js:126:9
+_onRequestHeader@resource://devtools/server/actors/network-monitor/network-observer.js:814:10
+NetworkObserver.prototype.observeActivity<@resource://devtools/server/actors/network-monitor/network-observer.js:699:12
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 126, column: 9
+console.error: (new TypeError("topFrame.browsingContext is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 126))
+Handler function _httpResponseExaminer threw an exception: TypeError: topFrame.browsingContext is null
+Stack: matchRequest@resource://devtools/server/actors/network-monitor/network-observer.js:126:9
+_httpResponseExaminer@resource://devtools/server/actors/network-monitor/network-observer.js:445:10
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 126, column: 9
+console.error: (new TypeError("topFrame.browsingContext is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 126))
+Handler function _httpResponseExaminer threw an exception: TypeError: topFrame.browsingContext is null
+Stack: matchRequest@resource://devtools/server/actors/network-monitor/network-observer.js:126:9
+_httpResponseExaminer@resource://devtools/server/actors/network-monitor/network-observer.js:445:10
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 126, column: 9
+console.error: (new TypeError("topFrame.browsingContext is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 126))
+Handler function _httpResponseExaminer threw an exception: TypeError: topFrame.browsingContext is null
+Stack: matchRequest@resource://devtools/server/actors/network-monitor/network-observer.js:126:9
+_httpResponseExaminer@resource://devtools/server/actors/network-monitor/network-observer.js:445:10
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 126, column: 9
+console.error: (new TypeError("topFrame.browsingContext is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 126))
+console.warn: "Resource  of root-node was not found."
+JavaScript warning: https://www.amazon.in/s?k=Xiaomi&ref=nb_sb_noss_2 line 7 > injectedScript, line 1: Failed to create WebGL context: WebGL is currently disabled.
+JavaScript warning: https://www.amazon.in/s?k=Xiaomi&ref=nb_sb_noss_2 line 7 > injectedScript, line 1: Failed to create WebGL context: WebGL is currently disabled.
+console.warn: "Resource  of root-node was not found."
+JavaScript warning: https://www.amazon.in/s?k=Xiaomi&ref=nb_sb_noss_2 line 7 > injectedScript, line 1: Failed to create WebGL context: WebGL is currently disabled.
+JavaScript warning: https://www.amazon.in/s?k=Xiaomi&ref=nb_sb_noss_2 line 7 > injectedScript, line 1: Failed to create WebGL context: WebGL is currently disabled.
+console.error: "Tried to send a 'target-destroyed-form' event on an already destroyed actor 'watcher'"
+1630127673983	Marionette	INFO	Stopped listening on port 51230
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+ce:///modules/BrowserGlue.jsm, line 1340: uncaught exception: undefined
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofileeRP6GB\\search.json.mozlz4", (void 0)))
+1630127656385	Marionette	INFO	Listening on port 51760
+1630127656700	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.amazon.in/s?k=Xiaomi&ref=nb_sb_noss_2 line 7 > injectedScript, line 1: Failed to create WebGL context: WebGL is currently disabled.
+JavaScript warning: https://www.amazon.in/s?k=Xiaomi&ref=nb_sb_noss_2 line 7 > injectedScript, line 1: Failed to create WebGL context: WebGL is currently disabled.
+console.error: services.settings: 
+  main/doh-providers Signature failed  InvalidSignatureError: Invalid content signature (main/doh-providers)
+console.error: services.settings: 
+  main/doh-providers local data was corrupted
+console.warn: services.settings: main/doh-providers Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/doh-config Signature failed  InvalidSignatureError: Invalid content signature (main/doh-config)
+console.error: services.settings: 
+  main/doh-config local data was corrupted
+console.warn: services.settings: main/doh-config Signature verified failed. Retry from scratch
+JavaScript warning: https://www.amazon.in/s?k=Xiaomi&ref=nb_sb_noss_2 line 7 > injectedScript, line 1: Failed to create WebGL context: WebGL is currently disabled.
+JavaScript warning: https://www.amazon.in/s?k=Xiaomi&ref=nb_sb_noss_2 line 7 > injectedScript, line 1: Failed to create WebGL context: WebGL is currently disabled.
+JavaScript warning: https://www.amazon.in/s?k=Xiaomi&ref=nb_sb_noss_2 line 7 > injectedScript, line 1: Failed to create WebGL context: WebGL is currently disabled.
+JavaScript warning: https://www.amazon.in/s?k=Xiaomi&ref=nb_sb_noss_2 line 7 > injectedScript, line 1: Failed to create WebGL context: WebGL is currently disabled.

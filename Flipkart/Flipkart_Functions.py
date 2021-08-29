@@ -2,10 +2,11 @@ import os
 import csv
 
 
-def Create_Url(search_item, max_page):
-    template = "https://www.flipkart.com/search?q={}&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off{}"
-    url = template.format(search_item, max_page)
-    return url
+def Create_Url(search_item):
+    template = "https://www.flipkart.com/search?q={}&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"
+    page_url = template.format(search_item)
+    page_url += "&page={}"
+    return page_url
 
 
 def Get_Product_Name(item):
@@ -35,9 +36,12 @@ def Get_Product_Discounted_Price(item):
 
 
 def Get_Product_Specifications(item):
-    product_info = item.find('ul', {'class': '_1xgFaf'})
+    product_info = item.find_all('li', {'class': 'rgWa7D'})
+    return_list = []
     try:
-        return product_info.text
+        for x in range(len(product_info)):
+            return_list.append(product_info[x].text)
+        return return_list
     except AttributeError:
         print("no info")
         return 'No info'
@@ -48,9 +52,13 @@ def Write_To_CSV(device_name, device_price_actual, device_price_discounted, devi
     if os.path.isfile('Flipkart.csv'):
         with open("Flipkart.csv", 'a', newline='', encoding='utf-8') as file_append:
             writer = csv.writer(file_append)
+            line = ''
             for i in range(len(device_name)):
                 temp_list.append(device_name[i])
-                temp_list.append(device_info[i])
+                for individual in device_info[i]:
+                    line += individual + '\015'
+                temp_list.append(line)
+                line = ''
                 temp_list.append(device_price_discounted[i])
                 temp_list.append(device_price_actual[i])
                 writer.writerow(temp_list)
@@ -61,9 +69,13 @@ def Write_To_CSV(device_name, device_price_actual, device_price_discounted, devi
             writer = csv.writer(file_write)
             fields = ['Name', 'Info', 'Discounted', 'Actual']
             writer.writerow(fields)
+            line = ''
             for i in range(len(device_name)):
                 temp_list.append(device_name[i])
-                temp_list.append(device_info[i])
+                for individual in device_info[i]:
+                    line += individual + '\015'
+                temp_list.append(line)
+                line = ''
                 temp_list.append(device_price_discounted[i])
                 temp_list.append(device_price_actual[i])
                 writer.writerow(temp_list)

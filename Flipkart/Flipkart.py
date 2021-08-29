@@ -1,6 +1,6 @@
-import csv
 import Flipkart_Functions
-import os
+import time
+import random
 from bs4 import BeautifulSoup
 from selenium import webdriver
 
@@ -13,6 +13,7 @@ def main():
 
     for page in range(1, max_pages+1):
         print(page)
+        # time.sleep(random.randint(1, 3))
         driver.get(url.format(page))
         device_name = []
         device_price_actual = []
@@ -37,8 +38,9 @@ def main():
             device_info.append(product_specifications)
 
         Flipkart_Functions.Write_To_CSV(device_name, device_price_actual, device_price_discounted, device_info)
+        Flipkart_Functions.Sort_CSV()
 
 
 if __name__ == '__main__':
-    main()
+    Flipkart_Functions.Sort_CSV()
     print("Finished")

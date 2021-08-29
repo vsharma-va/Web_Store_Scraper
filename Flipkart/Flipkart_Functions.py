@@ -3,7 +3,8 @@ import csv
 
 
 def Create_Url(search_item):
-    template = "https://www.flipkart.com/search?q={}&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"
+    template = '''https://www.flipkart.com/search?q={}&otracker=search&otracker1=search&marketplace
+                =FLIPKART&as-show=on&as=off&sort=price_desc'''
     page_url = template.format(search_item)
     page_url += "&page={}"
     return page_url
@@ -63,6 +64,7 @@ def Write_To_CSV(device_name, device_price_actual, device_price_discounted, devi
                 temp_list.append(device_price_actual[i])
                 writer.writerow(temp_list)
                 temp_list = []
+        file_append.close()
 
     else:
         with open("Flipkart.csv", 'w', newline='', encoding='utf-8') as file_write:
@@ -80,3 +82,33 @@ def Write_To_CSV(device_name, device_price_actual, device_price_discounted, devi
                 temp_list.append(device_price_actual[i])
                 writer.writerow(temp_list)
                 temp_list = []
+        file_write.close()
+
+
+def Sort_CSV():
+    checked = []
+    formatted = []
+    data = []
+    with open("Flipkart.csv", 'r', encoding='utf-8') as file_read:
+        reader = csv.reader(file_read)
+        next(reader)
+        for line in reader:
+            data.append(line)
+        for i in range(len(data)):
+            file_read.seek(0)
+            next(reader)
+            record = data[i]
+            to_check = record[0].split('(')
+            if record not in formatted:
+                formatted.append(record)
+            checked.append(record)
+            for line in reader:
+                if to_check[0] == line[0].split('(')[0] and line not in checked and line not in formatted:
+                    formatted.append(line)
+
+    with open("Flipkart_Sorted.csv", 'w', newline='', encoding='utf-8') as file_write:
+        writer = csv.writer(file_write)
+        fields = ['Name', 'Info', 'Discounted', 'Actual']
+        writer.writerow(fields)
+        for li in formatted:
+            writer.writerow(li)

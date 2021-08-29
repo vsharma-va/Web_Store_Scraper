@@ -1,2 +1,2 @@
 try and get the specifications of the device
-sort data in the csv file so that variations are next to each other
+sort data in the csv file so that variations are next to each other  -- done

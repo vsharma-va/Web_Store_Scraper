@@ -42,5 +42,5 @@ def main():
 
 
 if __name__ == '__main__':
-    Flipkart_Functions.Sort_CSV()
+    main()
     print("Finished")

@@ -8,7 +8,7 @@ from selenium import webdriver
 def main():
     # change this to webdriver.Chrome() if you want to use google chrome
     # also download and put the driver in the projects directory or provide the path
-    driver = webdriver.Firefox()
+    driver = webdriver.Firefox(executable_path=r"../Resources/geckodriver.exe")
     term_to_search = input("Enter the search term:  ")      # basically what you would type in amazons search bar
     url = Amazon_Functions.Create_Url(term_to_search)       # Create_Url adds the search term to the common address
 

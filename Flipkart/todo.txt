@@ -1,0 +1,3 @@
+add a check to see if the product is available or not
+add a filter for prices high to low so that covers and screen protectors are not present on the first few pages
+sort the results in the csv file so that variations are next to each other

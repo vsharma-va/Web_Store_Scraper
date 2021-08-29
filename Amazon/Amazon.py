@@ -11,8 +11,9 @@ def main():
     driver = webdriver.Firefox(executable_path=r"../Resources/geckodriver.exe")
     term_to_search = input("Enter the search term:  ")      # basically what you would type in amazons search bar
     url = Amazon_Functions.Create_Url(term_to_search)       # Create_Url adds the search term to the common address
+    max_pages = int(input("Enter the number of pages to search:  "))
 
-    for page in range(1, 3):                  # change the stop value to increase the number of pages you want to search
+    for page in range(1, max_pages+1):                  # change the stop value to increase the number of pages you want to search
         actual_price = []
         discounted_price = []
         device_names = []

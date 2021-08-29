@@ -3,7 +3,7 @@ import os
 
 
 def Create_Url(search_item):
-    template = "https://www.amazon.in/s?k={}&ref=nb_sb_noss_2"
+    template = "https://www.amazon.in/s?k={}&ref=nb_sb_noss_2&s=price-desc-rank"
     item = search_item.replace(' ', '+')
     url = template.format(item)
     url += "&page={}"           # this is what amazon adds to move to the next page

@@ -53,8 +53,10 @@ def Return_Discount_Actual_Price(item):
 
 # deletes selected products
 # it displays two groups of items with index next to them
-def Delete_Amazon_Or_Hovered(hovered_items, hovered_price_discount, hovered_price_actual, amazons_items,
-                             amazons_price_actual, amazons_price_discount):
+def Delete_Amazon_Or_Hovered(hovered_items, hovered_price_discount, hovered_price_actual, hovered_info_list,
+                             amazons_items, amazons_price_actual, amazons_price_discount, amazons_info_list):
+    print(hovered_info_list)
+    print(amazons_info_list)
     not_done = True
     while not_done:
         counter = 0
@@ -86,23 +88,25 @@ Or Enter an negative number to exit  '''))
             hovered_items.pop(delete_item_idx)
             hovered_price_discount.pop(delete_item_idx)
             hovered_price_actual.pop(delete_item_idx)
+            hovered_info_list.pop(delete_item_idx)
         elif selected_group == "ama" and delete_item_idx >= 0:
             amazons_items.pop(delete_item_idx)
             amazons_price_actual.pop(delete_item_idx)
             amazons_price_discount.pop(delete_item_idx)
+            amazons_info_list.pop(delete_item_idx)
 
         else:
             print('\n\n')
             print("You may have selected a group which is not present")
 
-    return [[hovered_items, hovered_price_actual, hovered_price_discount],
-            [amazons_items, amazons_price_actual, amazons_price_discount]]
+    return [[hovered_items, hovered_price_actual, hovered_price_discount, hovered_info_list],
+            [amazons_items, amazons_price_actual, amazons_price_discount, amazons_info_list]]
 
 
 # adds all of the products together in device_names actual_price and discount_price lists
 def Add_Amazon_Or_Hovered_Items(hovered_items, amazons_items, device_names, actual_price, discount_price,
-                                amazons_price_discount,
-                                amazons_price_actual, hovered_price_actual, hovered_price_discount):
+                                amazons_price_discount, amazons_price_actual, hovered_price_actual,
+                                hovered_price_discount, hovered_info_list, amazons_info_list, info_list):
     counter = 0
     print('\n\n')
     print("These are the remaining items. What would you like to do with them ?")
@@ -125,6 +129,7 @@ def Add_Amazon_Or_Hovered_Items(hovered_items, amazons_items, device_names, actu
                     device_names.append(hovered_items[i])
                     actual_price.append(hovered_price_actual[i])
                     discount_price.append(hovered_price_discount[i])
+                    info_list.append(hovered_info_list[i])
         except IndexError:
             print("no records left in hovered_items")
 
@@ -134,18 +139,19 @@ def Add_Amazon_Or_Hovered_Items(hovered_items, amazons_items, device_names, actu
                     device_names.append(amazons_items[h])
                     actual_price.append(amazons_price_actual[h])
                     discount_price.append(amazons_price_discount[h])
+                    info_list.append(amazons_info_list[h])
         except IndexError:
             print("No records left in amazons_items")
 
     elif user_answer == "de":
         print("Discarded Successfully")
 
-    return [device_names, actual_price, discount_price]
+    return [device_names, actual_price, discount_price, info_list]
 
 
 # just writes the three lists in a csv file
 # if the file already exists it appends to it other wise it creates a new one
-def Write_To_CSV(device_names, actual_price, discounted_price):
+def Write_To_CSV(device_names, actual_price, discounted_price, info_list):
     temp_list = []
     if os.path.isfile('Amazon.csv'):
         with open("Amazon.csv", 'a', newline='', encoding="utf-8") as file_write:
@@ -165,12 +171,14 @@ def Write_To_CSV(device_names, actual_price, discounted_price):
                 writer.writerow(temp_list)
                 temp_list = []
     else:
+        print(info_list)
         fields = ['Name', 'Actual', 'Discounted']
         with open('Amazon.csv', 'w', newline='', encoding="utf-8") as file:
             writer = csv.writer(file)
             writer.writerow(fields)
             for i in range(len(device_names)):
                 temp_list.append(device_names[i])
+                temp_list.append(info_list[i])
                 try:
                     temp_list.append(actual_price[i])
                 except IndexError:
@@ -183,3 +191,32 @@ def Write_To_CSV(device_names, actual_price, discounted_price):
                     print("Index error in temp_list")
                 writer.writerow(temp_list)
                 temp_list = []
+
+
+def Sort_CSV():
+    checked = []
+    formatted = []
+    data = []
+    with open("Amazon.csv", 'r', encoding='utf-8') as file_read:
+        reader = csv.reader(file_read)
+        next(reader)
+        for line in reader:
+            data.append(line)
+        for i in range(len(data)):
+            file_read.seek(0)
+            next(reader)
+            record = data[i]
+            to_check = record[0].split('(')
+            if record not in formatted:
+                formatted.append(record)
+            checked.append(record)
+            for line in reader:
+                if to_check[0] == line[0].split('(')[0] and line not in checked and line not in formatted:
+                    formatted.append(line)
+
+    with open("Amazon_Sorted.csv", 'w', newline='', encoding='utf-8') as file_write:
+        writer = csv.writer(file_write)
+        fields = ['Name', 'Info', 'Discounted', 'Actual']
+        writer.writerow(fields)
+        for li in formatted:
+            writer.writerow(li)

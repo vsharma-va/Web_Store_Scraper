@@ -55,8 +55,6 @@ def Return_Discount_Actual_Price(item):
 # it displays two groups of items with index next to them
 def Delete_Amazon_Or_Hovered(hovered_items, hovered_price_discount, hovered_price_actual, hovered_info_list,
                              amazons_items, amazons_price_actual, amazons_price_discount, amazons_info_list):
-    print(hovered_info_list)
-    print(amazons_info_list)
     not_done = True
     while not_done:
         counter = 0
@@ -158,6 +156,7 @@ def Write_To_CSV(device_names, actual_price, discounted_price, info_list):
             writer = csv.writer(file_write)
             for i in range(len(device_names)):
                 temp_list.append(device_names[i])
+                temp_list.append(info_list[i][0])
                 try:
                     temp_list.append(actual_price[i])
                 except IndexError:
@@ -171,14 +170,13 @@ def Write_To_CSV(device_names, actual_price, discounted_price, info_list):
                 writer.writerow(temp_list)
                 temp_list = []
     else:
-        print(info_list)
         fields = ['Name', 'Actual', 'Discounted']
         with open('Amazon.csv', 'w', newline='', encoding="utf-8") as file:
             writer = csv.writer(file)
             writer.writerow(fields)
             for i in range(len(device_names)):
                 temp_list.append(device_names[i])
-                temp_list.append(info_list[i])
+                temp_list.append(info_list[i][0])
                 try:
                     temp_list.append(actual_price[i])
                 except IndexError:

@@ -9,10 +9,12 @@ import time
 # change this to webdriver.Chrome() if you want to use google chrome
 # also download and put the driver in the projects directory or provide the path
 driver = webdriver.Firefox(executable_path=r"../Resources/geckodriver.exe")
+driver.maximize_window()
 
 
 def Get_Product_Info(item):
     info_list = []
+    temp_list = []
     product_name = item.h2.a.span
     link = driver.find_element_by_link_text(product_name.text)
     link.click()
@@ -21,9 +23,11 @@ def Get_Product_Info(item):
     original_window = driver.window_handles[0]
     driver.switch_to.window(new_window)
     info_soup = BeautifulSoup(driver.page_source, 'html.parser')
-    all_info = info_soup.find_all('div', {'id': 'featurebullets_feature_div'})
-    for info in all_info:
-        info_list.append(info.text.strip())
+    all_info = info_soup.find('div', {'id': 'featurebullets_feature_div'})
+    temp_list.append(all_info.text)
+    for info in temp_list:
+        temp = info.replace('\n', '')
+        info_list.append(temp.replace(',', '\015'))
     driver.close()
     driver.switch_to.window(original_window)
     return info_list

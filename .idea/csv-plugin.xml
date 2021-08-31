@@ -17,20 +17,6 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\Flipkart\Flipkart.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\Flipkart\Flipkart_Sorted.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
       </map>
     </option>
   </component>

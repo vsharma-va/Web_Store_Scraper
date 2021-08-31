@@ -19,6 +19,7 @@ def main():
         device_price_actual = []
         device_price_discounted = []
         device_info = []
+        device_status = []
         soup = BeautifulSoup(driver.page_source, 'html.parser')
         results = soup.find_all('a', {'target': '_blank'})
         total_results = soup.find('span', {'class': '_10Ermr'})
@@ -27,6 +28,7 @@ def main():
         print(total_results_num)
         for i in range(total_results_num):
             item = results[i]
+            product_info = Flipkart_Functions.Get_Product_Status(item)
             product_name = Flipkart_Functions.Get_Product_Name(item)
             product_price_actual = Flipkart_Functions.Get_Product_Actual_Price(item)
             product_price_discounted = Flipkart_Functions.Get_Product_Discounted_Price(item)
@@ -36,8 +38,9 @@ def main():
             device_price_actual.append(product_price_actual)
             device_price_discounted.append(product_price_discounted)
             device_info.append(product_specifications)
+            device_status.append(product_info)
 
-        Flipkart_Functions.Write_To_CSV(device_name, device_price_actual, device_price_discounted, device_info)
+        Flipkart_Functions.Write_To_CSV(device_name, device_price_actual, device_price_discounted, device_info, device_status)
         Flipkart_Functions.Sort_CSV()
 
 

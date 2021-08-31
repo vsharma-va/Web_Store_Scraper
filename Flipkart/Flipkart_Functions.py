@@ -5,7 +5,8 @@ import csv
 def Create_Url(search_item):
     template = '''https://www.flipkart.com/search?q={}&otracker=search&otracker1=search&marketplace
                 =FLIPKART&as-show=on&as=off&sort=price_desc'''
-    page_url = template.format(search_item)
+    item = search_item.replace(' ', '+')
+    page_url = template.format(item)
     page_url += "&page={}"
     return page_url
 
@@ -16,6 +17,15 @@ def Get_Product_Name(item):
         return product_name.text
     except AttributeError:
         print("No name")
+
+
+def Get_Product_Status(item):
+    product_status = item.find('div', {'class': '_3G6awp'})
+    try:
+        return product_status.text
+    except AttributeError:
+        print("No Product Status")
+        return 'Available'
 
 
 def Get_Product_Actual_Price(item):
@@ -48,7 +58,7 @@ def Get_Product_Specifications(item):
         return 'No info'
 
 
-def Write_To_CSV(device_name, device_price_actual, device_price_discounted, device_info):
+def Write_To_CSV(device_name, device_price_actual, device_price_discounted, device_info, device_status):
     temp_list = []
     if os.path.isfile('Flipkart.csv'):
         with open("Flipkart.csv", 'a', newline='', encoding='utf-8') as file_append:
@@ -62,6 +72,7 @@ def Write_To_CSV(device_name, device_price_actual, device_price_discounted, devi
                 line = ''
                 temp_list.append(device_price_discounted[i])
                 temp_list.append(device_price_actual[i])
+                temp_list.append(device_status[i])
                 writer.writerow(temp_list)
                 temp_list = []
         file_append.close()
@@ -69,7 +80,7 @@ def Write_To_CSV(device_name, device_price_actual, device_price_discounted, devi
     else:
         with open("Flipkart.csv", 'w', newline='', encoding='utf-8') as file_write:
             writer = csv.writer(file_write)
-            fields = ['Name', 'Info', 'Discounted', 'Actual']
+            fields = ['Name', 'Info', 'Discounted', 'Actual', 'Status']
             writer.writerow(fields)
             line = ''
             for i in range(len(device_name)):
@@ -80,6 +91,7 @@ def Write_To_CSV(device_name, device_price_actual, device_price_discounted, devi
                 line = ''
                 temp_list.append(device_price_discounted[i])
                 temp_list.append(device_price_actual[i])
+                temp_list.append(device_status[i])
                 writer.writerow(temp_list)
                 temp_list = []
         file_write.close()
@@ -108,7 +120,7 @@ def Sort_CSV():
 
     with open("Flipkart_Sorted.csv", 'w', newline='', encoding='utf-8') as file_write:
         writer = csv.writer(file_write)
-        fields = ['Name', 'Info', 'Discounted', 'Actual']
+        fields = ['Name', 'Info', 'Discounted', 'Actual', 'Status']
         writer.writerow(fields)
         for li in formatted:
             writer.writerow(li)

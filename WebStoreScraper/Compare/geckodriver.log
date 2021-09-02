@@ -1,0 +1,45 @@
+1630569276277	geckodriver	INFO	Listening on 127.0.0.1:50203
+1630569279337	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofileHLwyPX"
+1630569279675	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofileHLwyPX\\search.json.mozlz4", (void 0)))
+1630569281542	Marionette	INFO	Listening on port 50211
+1630569282016	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1630569292626	Marionette	INFO	Stopped listening on port 50211
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1630569341048	geckodriver	INFO	Listening on 127.0.0.1:50263
+1630569344120	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofile8O1G70"
+1630569344436	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yavsv\\AppData\\Local\\Temp\\rust_mozprofile8O1G70\\search.json.mozlz4", (void 0)))
+1630569346150	Marionette	INFO	Listening on port 50271
+1630569346269	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-T5BKDW2, line 308: unreachable code after return statement
+JavaScript error: https://www.reliancedigital.in/search?q=samsung:price-desc&page=1, line 111: TypeError: r.pushManager is undefined
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-T5BKDW2, line 308: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-T5BKDW2, line 308: unreachable code after return statement
+JavaScript error: https://www.reliancedigital.in/build/client/js/vendor29541630569664094	Marionette	INFO	Stopped listening on port 50328
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+[Parent 17188, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+TM-T5BKDW2, line 308: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-T5BKDW2, line 308: unreachable code after return statement
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-T5BKDW2, line 44: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error:1630569664729	Marionette	INFO	Stopped listening on port 50619
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+Error: JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment
+1630569663402	Marionette	INFO	Stopped listening on port 50271
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

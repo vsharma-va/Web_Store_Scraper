@@ -60,8 +60,8 @@ def Get_Product_Specifications(item):
 
 def Write_To_CSV(device_name, device_price_actual, device_price_discounted, device_info, device_status):
     temp_list = []
-    if os.path.isfile('Flipkart.csv'):
-        with open("Flipkart.csv", 'a', newline='', encoding='utf-8') as file_append:
+    if os.path.isfile('../Compare/data/Flipkart.csv'):
+        with open("../Compare/data/Flipkart.csv", 'a', newline='', encoding='utf-8') as file_append:
             writer = csv.writer(file_append)
             line = ''
             for i in range(len(device_name)):
@@ -78,7 +78,7 @@ def Write_To_CSV(device_name, device_price_actual, device_price_discounted, devi
         file_append.close()
 
     else:
-        with open("Flipkart.csv", 'w', newline='', encoding='utf-8') as file_write:
+        with open("../Compare/data/Flipkart.csv", 'w', newline='', encoding='utf-8') as file_write:
             writer = csv.writer(file_write)
             fields = ['Name', 'Info', 'Discounted', 'Actual', 'Status']
             writer.writerow(fields)
@@ -101,7 +101,7 @@ def Sort_CSV():
     checked = []
     formatted = []
     data = []
-    with open("Flipkart.csv", 'r', encoding='utf-8') as file_read:
+    with open("../Compare/data/Flipkart.csv", 'r', encoding='utf-8') as file_read:
         reader = csv.reader(file_read)
         next(reader)
         for line in reader:
@@ -118,7 +118,7 @@ def Sort_CSV():
                 if to_check[0] == line[0].split('(')[0] and line not in checked and line not in formatted:
                     formatted.append(line)
 
-    with open("Flipkart_Sorted.csv", 'w', newline='', encoding='utf-8') as file_write:
+    with open("../Compare/data/Flipkart_Sorted.csv", 'w', newline='', encoding='utf-8') as file_write:
         writer = csv.writer(file_write)
         fields = ['Name', 'Info', 'Discounted', 'Actual', 'Status']
         writer.writerow(fields)

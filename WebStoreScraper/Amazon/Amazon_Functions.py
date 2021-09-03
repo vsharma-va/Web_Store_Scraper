@@ -151,8 +151,8 @@ def Add_Amazon_Or_Hovered_Items(hovered_items, amazons_items, device_names, actu
 # if the file already exists it appends to it other wise it creates a new one
 def Write_To_CSV(device_names, actual_price, discounted_price, info_list):
     temp_list = []
-    if os.path.isfile('Amazon.csv'):
-        with open("Amazon.csv", 'a', newline='', encoding="utf-8") as file_write:
+    if os.path.isfile('../Compare/data/Amazon.csv'):
+        with open("../Compare/data/Amazon.csv", 'a', newline='', encoding="utf-8") as file_write:
             writer = csv.writer(file_write)
             for i in range(len(device_names)):
                 temp_list.append(device_names[i])
@@ -171,7 +171,7 @@ def Write_To_CSV(device_names, actual_price, discounted_price, info_list):
                 temp_list = []
     else:
         fields = ['Name', 'Actual', 'Discounted']
-        with open('Amazon.csv', 'w', newline='', encoding="utf-8") as file:
+        with open('../Compare/data/Amazon.csv', 'w', newline='', encoding="utf-8") as file:
             writer = csv.writer(file)
             writer.writerow(fields)
             for i in range(len(device_names)):
@@ -195,7 +195,7 @@ def Sort_CSV():
     checked = []
     formatted = []
     data = []
-    with open("Amazon.csv", 'r', encoding='utf-8') as file_read:
+    with open("../Compare/data/Amazon.csv", 'r', encoding='utf-8') as file_read:
         reader = csv.reader(file_read)
         next(reader)
         for line in reader:
@@ -212,7 +212,7 @@ def Sort_CSV():
                 if to_check[0] == line[0].split('(')[0] and line not in checked and line not in formatted:
                     formatted.append(line)
 
-    with open("Amazon_Sorted.csv", 'w', newline='', encoding='utf-8') as file_write:
+    with open("../Compare/data/Amazon_Sorted.csv", 'w', newline='', encoding='utf-8') as file_write:
         writer = csv.writer(file_write)
         fields = ['Name', 'Info', 'Discounted', 'Actual']
         writer.writerow(fields)

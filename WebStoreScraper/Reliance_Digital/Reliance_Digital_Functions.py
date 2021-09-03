@@ -48,7 +48,7 @@ def Get_Product_Status(item):
 
 def Write_To_CSV(device_name, device_price_actual, device_price_discounted, device_specifications, device_info):
     temp_list = []
-    if os.path.isfile('Reliance_Digital.csv'):
+    if os.path.isfile('../Compare/data/Reliance_Digital.csv'):
         with open("Reliance_Digital.csv", 'a', newline='', encoding='utf-8') as file_append:
             writer = csv.writer(file_append)
             line = ''
@@ -65,7 +65,7 @@ def Write_To_CSV(device_name, device_price_actual, device_price_discounted, devi
                 temp_list = []
         file_append.close()
     else:
-        with open("Reliance_Digital.csv", 'w', newline='', encoding='utf-8') as file_write:
+        with open("../Compare/data/Reliance_Digital.csv", 'w', newline='', encoding='utf-8') as file_write:
             writer = csv.writer(file_write)
             fields = ['Name', 'Specifications', 'Discounted', 'Actual', 'Status']
             writer.writerow(fields)
@@ -88,7 +88,7 @@ def Sort_CSV():
     checked = []
     formatted = []
     data = []
-    with open("Reliance_Digital.csv", 'r', encoding='utf-8') as file_read:
+    with open("../Compare/data/Reliance_Digital.csv", 'r', encoding='utf-8') as file_read:
         reader = csv.reader(file_read)
         next(reader)
         for line in reader:
@@ -105,7 +105,7 @@ def Sort_CSV():
                 if to_check[0] == line[0].split('(')[0] and line not in checked and line not in formatted:
                     formatted.append(line)
 
-    with open("Reliance_Digital_Sorted.csv", 'w', newline='', encoding='utf-8') as file_write:
+    with open("../Compare/data/Reliance_Digital_Sorted.csv", 'w', newline='', encoding='utf-8') as file_write:
         writer = csv.writer(file_write)
         fields = ['Name', 'Specifications', 'Discounted', 'Actual', 'Status']
         writer.writerow(fields)

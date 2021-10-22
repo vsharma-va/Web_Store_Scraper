@@ -97,12 +97,13 @@ def main():
         device_info = []
         device_specifications = []
         category_list = Get_All_Categories()
-        for k in category_list:
-            for category_element in k:
-                print(display_counter, category_element)
-                display_counter += 1
-        user_input = int(input("Enter the index number of the category you want to search"))
-        Go_To_User_Defined_Category(user_input, category_list)
+        if page == 1:
+            for k in category_list:
+                for category_element in k:
+                    print(display_counter, category_element)
+                    display_counter += 1
+            user_input = int(input("Enter the index number of the category you want to search"))
+            Go_To_User_Defined_Category(user_input, category_list)
         soup = BeautifulSoup(driver.page_source, 'html.parser')
         results = soup.find_all('a', {'target': '_blank'})
         for i in range(len(results)):
@@ -111,7 +112,7 @@ def main():
             product_name = Reliance_Digital_Functions.Get_Product_Name(item)
             product_price_actual = Reliance_Digital_Functions.Get_Product_Actual_Price(item)
             product_price_discounted = Reliance_Digital_Functions.Get_Product_Discounted_Price(item)
-            product_specifications = Get_Product_Specifications(product_name, i)
+            product_specifications = '1' # Get_Product_Specifications(product_name, i)
 
             device_name.append(product_name)
             device_price_actual.append(product_price_actual)

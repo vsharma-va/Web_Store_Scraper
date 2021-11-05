@@ -1,9 +1,11 @@
+import selenium.common.exceptions
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.action_chains import ActionChains
 import time
 import WebStoreScraper.Reliance_Digital.Reliance_Digital_Functions as Reliance_Digital_Functions
 
@@ -54,8 +56,15 @@ def Get_Product_Specifications(product_name, i):
     # click on see more
     WebDriverWait(driver, 15).until(EC.presence_of_all_elements_located((
        By.XPATH, "//div[@class='pdp__tab-info__list__name blk__sm__6 blk__xs__6']")))
-    see_more = driver.find_element_by_xpath("//span[@id='specificationsIdMain']")
-    see_more.click()
+    try:
+        time.sleep(1)
+        see_more = driver.find_element_by_xpath("//span[@id='specificationsIdMain']")
+        driver.execute_script("arguments[0].scrollIntoView();", see_more)
+        driver.execute_script("arguments[0].click()", see_more)
+    except selenium.common.exceptions.StaleElementReferenceException:
+        print('except')
+        see_more = driver.find_element_by_xpath("//div[@id='RIL_HeaderSpecification']")
+        see_more.click()
     info_soup = BeautifulSoup(driver.page_source, 'html.parser')
     info_value = info_soup.find_all('div', {'class': 'pdp__tab-info__list__value blk__sm__6 blk__xs__6'})
     for k in info_value:
@@ -112,7 +121,7 @@ def main():
             product_name = Reliance_Digital_Functions.Get_Product_Name(item)
             product_price_actual = Reliance_Digital_Functions.Get_Product_Actual_Price(item)
             product_price_discounted = Reliance_Digital_Functions.Get_Product_Discounted_Price(item)
-            product_specifications = '1' # Get_Product_Specifications(product_name, i)
+            product_specifications = Get_Product_Specifications(product_name, i)
 
             device_name.append(product_name)
             device_price_actual.append(product_price_actual)

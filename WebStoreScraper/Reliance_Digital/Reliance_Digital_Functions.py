@@ -49,7 +49,7 @@ def Get_Product_Status(item):
 def Write_To_CSV(device_name, device_price_actual, device_price_discounted, device_specifications, device_info):
     temp_list = []
     if os.path.isfile('../Compare/data/Reliance_Digital.csv'):
-        with open("Reliance_Digital.csv", 'a', newline='', encoding='utf-8') as file_append:
+        with open("../Compare/data/Reliance_Digital.csv", 'a', newline='', encoding='utf-8') as file_append:
             writer = csv.writer(file_append)
             line = ''
             for i in range(len(device_name)):
